@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>
+            Registro
+        </title>
+        <link rel="stylesheet" href="landingStyle.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <span>Teacher Screen</span>
+                <span class="menu"></span>
+            </div>
+            <h2>Industrial Software Development</h2>
+            <div class="content">
+                <h3>Calendar 2025</h3>
+                <div class="calendar-box"></div>
+            </div>
+        </div>
+        <ul id="lista">
+        </ul>
+        <form>
+            <script>
+            </script>
+        </form>
+    </body>
+</html>
+
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 80%;
+    max-width: 800px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+.menu {
+    width: 30px;
+    height: 30px;
+    background: #ccc;
+    border-radius: 5px;
+}
+.content {
+    padding: 20px;
+}
+.calendar-box {
+    width: 100%;
+    height: 200px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+const array1[]
+const map1 = array1.map((x) =>{
+    var li = document.createElement("li");
+    var title =document.createTextNode(x.title);
+    li.appendChild(title);
+    return li
+})
+console.log(map1)

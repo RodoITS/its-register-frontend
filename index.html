@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            ITS login
+        </title>
+        <link rel="stylesheet" href="loginStyle.css"/>
+    </head>
+    <body>
+        <div class="bordered"></div>
+        <form action="landing.html">
+            <label for="email">
+                Email
+            </label>
+            <br>
+            <input type="email" placeholder="nome.cognome@itssmartacademy.it" style="height:30px" size="40" maxlength="40" id="email" required
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+            <br><br>
+            <label for="password">
+                Password
+            </label>
+            <input type="button" id="button" onclick="vedipwd()" value="🙈">
+            <br>
+            <input type="password" placeholder="Password123!" style="height:30px" size="40" maxlength="40" id="password" required
+                pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\W_]).{8,}$"
+                title="La password deve contenere almeno 8 caratteri, una lettera maiuscola, una minuscola, un numero e un carattere speciale">
+            <br><br>
+            <input type="submit" value="sign in">
+            <script>
+                function vedipwd(){
+                    if (password.type=="password"){
+                        password.type="text", button.value="🙊"}
+                    else {password.type="password", button.value="🙈"}}
+            </script>
+        </form>
+    </body>
+</html>

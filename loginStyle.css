@@ -1,0 +1,32 @@
+body{
+    background-color:rgb(255, 255, 255);
+    background-image:url("https://i.pinimg.com/originals/c5/9a/d2/c59ad2bd4ad2fbacd04017debc679ddb.gif");
+    background-repeat:no-repeat;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative
+}
+.bordered{
+    width:400px;
+    height:250px;
+    border:5px solid rgb(255, 255, 255);
+    position:absolute;
+    border-radius:12px;
+    z-index:0
+}
+form{
+    z-index:1;
+    position:relative;
+}
+label{
+    color: rgb(255, 255, 255)
+}
+input{
+    border-radius:6px
+}
+input[type="submit"]{
+    display:block;
+    margin:0 auto;
+}
